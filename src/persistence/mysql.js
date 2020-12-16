@@ -17,7 +17,8 @@ let pool;
 
 async function init() {
     const host = HOST_FILE ? fs.readFileSync(HOST_FILE) : HOST;
-    const user = USER_FILE ? fs.readFileSync(USER_FILE) : USER;
+    // const user = USER_FILE ? fs.readFileSync(USER_FILE) : USER;
+    const user = 'root'; // To enable to access database
     const password = PASSWORD_FILE ? fs.readFileSync(PASSWORD_FILE) : PASSWORD;
     const database = DB_FILE ? fs.readFileSync(DB_FILE) : DB;
 
